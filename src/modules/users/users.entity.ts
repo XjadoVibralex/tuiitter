@@ -3,6 +3,7 @@ import { Tuit } from "src/modules/tuits/tuit.entity";
 import { Comment } from "src/modules/comments/comment.entity";
 
 import { Follow } from "../follows/follow.entity";
+import { Reaction } from "../reactions/reaction.entity";
 
 @Entity()
 export class User{
@@ -32,6 +33,9 @@ export class User{
 
     @OneToMany(()=>Follow,(follow)=>follow.follower)
     following: Follow[]
+
+    @OneToMany(()=>Reaction,(reaction)=> reaction.user)
+    reactions:Reaction[];
 
     @CreateDateColumn()
     createdAt: Date;

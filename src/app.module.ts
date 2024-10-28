@@ -6,6 +6,7 @@ import { DatabaseModule } from './database/database.module';
 import { CommentsModule } from './modules/comments/comments.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { FollowsModule } from './modules/follows/follows.module';
+import { ReactionsModule } from './modules/reactions/reactions.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { FollowsModule } from './modules/follows/follows.module';
     CommentsModule,
     AuthModule,
     FollowsModule,
+    ReactionsModule,
   ],
 })
 export class AppModule {
