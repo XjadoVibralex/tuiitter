@@ -15,7 +15,7 @@ export const DatabaseProvider:DynamicModule =TypeOrmModule.forRootAsync({
             port: +config.get('DB_PORT'),
             username: config.get('DB_USER'),  
             password: config.get('DB_PASSWORD'),
-            database: 'twiter-api',
+            database: 'tuitter-api-db',
             autoLoadEntities: true,
             // synchronize: true
 
