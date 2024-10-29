@@ -17,7 +17,7 @@ export const DatabaseProvider:DynamicModule =TypeOrmModule.forRootAsync({
             password: config.get('DB_PASSWORD'),
             database: 'twiter-api',
             autoLoadEntities: true,
-            synchronize: true
+            // synchronize: true
 
         } as TypeOrmModuleOptions;
 
